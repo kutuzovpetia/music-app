@@ -1,0 +1,28 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.5",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.1.1",
+    "bootstrap-icons": "^1.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "handlebars": "^4.7.7",
+    "socket.io": "^4.2.0",
+    "youtube-mp3-downloader": "^0.7.7",
+    "youtube-music-api": "^1.0.6"
+  }
+}

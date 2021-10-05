@@ -1,0 +1,42 @@
+<div class="search row d-flex justify-content-center position-fixed start-0 end-0">
+
+    <div class="col col-lg-4 col-sm-12 d-flex align-items-center flex-column position-relative">
+        <div class="position-absolute">
+            <div class="d-flex">
+                <input autocomplete="off" name="text" type="text" class="form-control" placeholder="Введите название песни/исполнителя" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn-find btn btn-primary d-flex align-items-center">
+                    <span class="sr-only">Поиск</span>
+                </button>
+            </div>
+            <ul class="list-group"></ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="music-list mt-3"></div>
+</div>
+
+<div class="audio-player">
+    <audio src="" controls></audio>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/vNzGGkVbSsc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+

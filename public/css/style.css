@@ -1,0 +1,89 @@
+body{
+    background-color: black;
+    color: green;
+}
+
+
+.container{
+    padding: 60px 0 50px 0;
+}
+
+.bi-play-circle{
+    cursor: pointer;
+    font-size: 40px;
+    transition: all .5s ease;
+}
+
+.bi-play-circle:hover{
+    /*font-size: 35px;*/
+    color: #055160;
+}
+
+/* Кнопка показать еще*/
+thead th:nth-last-child(1){
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-more{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+/************************/
+
+.bi-arrow-right-circle{
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+.bi-film{
+    font-size: 35px;
+}
+
+.bi-pause-circle{
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+.btn-play-wrapper{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio-player > audio{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: none;
+}
+
+.spinner-grow{
+    display: none;
+}
+
+td, th{
+    vertical-align: middle;
+}
+
+form .list-group{
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+.list-group-item-info{
+    cursor: pointer;
+}
+
+.search{
+    padding: 15px;
+    background-color: rgba(0, 120, 201, 0.3); /* Цвет фона и значение прозрачности */
+    height: 70px;
+}
+
+.search .list-group-item:hover{
+    color: #055160;
+    cursor: pointer;
+}
