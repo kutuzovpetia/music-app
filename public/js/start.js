@@ -1,6 +1,6 @@
 class Start{
     constructor() {
-        this._URL = 'http://192.168.0.177:3000/';
+        this._URL = 'https://music-app-1v.herokuapp.com/';
         this.input = document.querySelector('input');
         this.value = this.input.value;
     }
@@ -40,7 +40,7 @@ class Start{
         document.querySelector('table tbody').innerHTML = this.addItemInTable(res.content);
         let next = res.continuation;
         document.querySelector('.btn-more').addEventListener('click', async ()=>{
-                await fetch('http://192.168.0.177:3000/more', {
+                await fetch('https://music-app-1v.herokuapp.com/more', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json'},
                     body: JSON.stringify(next)
@@ -126,7 +126,7 @@ class Start{
                     btn.previousElementSibling.style.display = 'block'; // Спинер ON
                     btn.style.display = 'none'; // Скрыли кнопку
 
-                    loadSong(btn, 'http://192.168.0.177:3000/download')
+                    loadSong(btn, 'https://music-app-1v.herokuapp.com/download')
                         .then(data=>{
                             return data.json()
                         })
