@@ -1,8 +1,8 @@
 const {Router} = require('express');
-const YoutubeMusicApi = require('youtube-music-api');
+const YoutubeMusicApi = require('../youtube-music-api');
 const router = Router();
 const api = new YoutubeMusicApi();
-const YoutubeMp3Downloader = require("youtube-mp3-downloader");
+const YoutubeMp3Downloader = require("../youtube-mp3-downloader");
 
 // Главная страница *************************
 router.get('/', (req, res)=>{
