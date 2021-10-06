@@ -36,7 +36,7 @@ function listItemTrigger(){
 document.addEventListener('DOMContentLoaded', ()=>{
     const start = new Start();
     document.querySelector('input').addEventListener('input',  async function (e){
-        await fetch('http://192.168.0.177:3000/suggestions', {
+        await fetch('http://music-app-1v.herokuapp.com/suggestions', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify({data: this.value})
